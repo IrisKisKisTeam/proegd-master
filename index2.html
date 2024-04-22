@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LandScope</title>
+  <link rel="stylesheet" href="reset2.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <h1 class="logo">LandScope</h1>
+
+      <nav class="header__nav">
+        <ul>
+          <li><a href="index.html">Главная страница</a></li>
+          <li><a href="https://ee-st091169.projects.earthengine.app/view/landscope">Карта</a></li>
+          <li><a href="#">Новости</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger">
+        <p>☰</p>
+      </button>
+      <ul class="hide burger-nav">
+        <li><a href="index.html">Главная страница</a></li>
+        <li><a href="https://ee-st091169.projects.earthengine.app/view/landscope">Карта</a></li>
+        <li><a href="#">Новости</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main" class="main">
+    <section class="about common-section ">
+      <div class="container">
+        <div class="title-wrapper">
+          <h3 class="title">Новости</h3>
+        </div>
+
+        <div class="cards-wrapper">
+          <div class="card">
+            <img class="img" src="/img/news1.jpg" />
+            <p>Что такое экологический мониторинг и зачем он нужен</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+          <div class="card">
+            <img class="img" src="/img/news1.jpg" />
+            <p>Что такое экологический мониторинг и зачем он нужен</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+          <div class="card">
+            <img class="img" src="/img/news1.jpg" />
+            <p>Что такое экологический мониторинг и зачем он нужен</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+          <div class="card">
+            <img class="img" src="/img/news1.jpg" />
+            <p>Что такое экологический мониторинг и зачем он нужен</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer__desc">
+      <div class="container footer__desc-container">
+        <div class="footer__about">
+          <h4 class="title-meow">О LandScope</h4>
+          <p>Этот геопортал создан для отслеживания изменения размеров открытых угольных разрезов, это необходимо для
+            осознания серьёзности проблемы и её последствий.</p>
+        </div>
+        <div class="footer__links">
+          <h4 class="title-meow">полезные ссылки</h4>
+          <ul>
+            <li><a target="_blank" href="https://www.youtube.com/@RybkaMyshkaTO">Лучшие фильмы</a></li>
+            <li><a target="_blank" href="https://vk.com/taynitskiy">Лучший учитель</a></li>
+            <li><a target="_blank" href="https://yandex.ru/games/">Лучшие игры</a></li>
+            <li><a target="_blank" href="https://images.app.goo.gl/8efm45FGcWSjfkmA7">Лучший котёнок</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h4 class="title-meow">Социальные сети</h4>
+          <ul>
+            <li>
+              <img src="img/icon-tw.svg" alt="twitter">
+              <a target="_blank" href="https://www.youtube.com/watch?v=FAPwIEWzqJE">Twitter*</a>
+            </li>
+            <li>
+              <img src="img/icon-pt.svg" alt="pinterest">
+              <a target="_blank" href="https://www.youtube.com/watch?v=FAPwIEWzqJE">Pinterest</a>
+            </li>
+            <li>
+              <img src="img/icon-google.svg" alt="google">
+              <a target="_blank" href="https://www.youtube.com/watch?v=FAPwIEWzqJE">Google</a>
+            </li>
+            <li>
+              <img src="img/icon-wb.svg" alt="webflow">
+              <a target="_blank" href="https://www.youtube.com/watch?v=FAPwIEWzqJE">Webflow</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__copy">
+      <div class="container">
+        <p>Copyright LandScope Inc. Made in SPBU. <br>*Запрещённая в Российской Федерации организация.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Code injected by live-server -->
+  <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script>
+
+
+</body>
+
+</html>
