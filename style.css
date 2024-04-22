@@ -362,6 +362,7 @@ p {
 
 .s {
   margin-top: 16px;
+  margin-bottom: 32px;
   font-size: 42px;
   color: #192024;
 }
@@ -496,6 +497,15 @@ p {
 @media (max-width: 768px) {
   .header__nav {
     display: none;
+  }
+
+  .s {
+    font-size: 26px;
+  }
+
+  .iframe {
+    aspect-ratio: 16 / 9;
+    width: 90vw;
   }
 
   .burger {

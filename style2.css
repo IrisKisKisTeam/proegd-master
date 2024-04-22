@@ -260,8 +260,8 @@ p {
 
 
 .img {
+  aspect-ratio: 2 / 1;
   width: 250px;
-  height: 125px;
   object-fit: cover;
   margin: auto 0;
 }
@@ -484,6 +484,24 @@ p {
   .footer__desc {
     padding-top: 0;
   }
+
+  .img {
+    width: 100px;
+  }
+
+  .about .card {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #DCEBF7;
+    border-radius: 5px;
+    text-align: left;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+
 }
 
 @media (max-width: 660px) {
@@ -500,6 +518,17 @@ p {
   .tabs__nav button+button {
     margin-top: 10px;
     margin-left: auto;
+  }
+
+  .about .card {
+    width: 350px;
+    border: 1px solid #DCEBF7;
+    border-radius: 5px;
+    text-align: left;
+  }
+
+  .card p {
+    font-size: 14px;
   }
 }
 
