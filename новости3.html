@@ -35,40 +35,27 @@
         </div>
     </header>
 
-    <main id="main" class="main map-container">
-        <div class="map">
-            <iframe class="iframe" src="https://ee-st091169.projects.earthengine.app/view/landscope"></iframe>
-            <p class="s">Площадь 21 000 км</p>
-        </div>
-        <!-- ССЫЛКИ НА КАРТЫ ЗДЕСЬ -->
-        <select class="year">
-            <option value="https://ee-st091169.projects.earthengine.app/view/landscope">2024</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/landscope">2023</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2022">2022</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2021">2021</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2020">2020</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2019">2019</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2018">2018</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2017">2017</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2016">2016</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2015">2015</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2014">2014</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2013">2013</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2012">2012</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2011">2011</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2010">2010</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2009">2009</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2008">2008</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2007">2007</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2006">2006</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2005">2005</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2004">2004</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2003">2003</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2002">2002</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2001">2001</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/karta2000">2000</option>
+    <main id="main" class="main main-container">
+        <section class="about common-section article-section">
+            <h1 class="article-h">В России могут запретить строить заводы без систем контроля за выбросами</h1>
+            <img src="./img/новости3.webp" class="article-image" />
+            <p class="article-p">В Совете Федерации предложили запретить строить заводы, чья деятельность связана с
+                загрязнением воздуха, если в проекте
+                не предусмотрена установка системы контроля за выбросами и очистительных сооружений, пишет
+                "Парламентская газета".
+                Сенатор от Челябинской области Олег Цепкин предложил внести соответствующую поправку в закон "Об охране
+                атмосферного
+                воздуха", говорится в статье.
+                Законопроектом также предлагается обязать уже работающие предприятия в течение трех лет установить
+                системы контроля и
+                очистные сооружения.
+                Ответственность за их отсутствие предлагается привязать к уже действующим законодательным мерам за
+                превышение вредных
+                выбросов. Для юрлиц размер штрафа может достигать нескольких миллионов рублей.
+                Радио Sputnik также сообщало, что в Подмосковье выявили два предприятия, деятельность которых наносит
+                вред экологии.</p>
+        </section>
 
-        </select>
     </main>
 
     <footer id="footer" class="footer">
@@ -123,36 +110,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        const iframe = document.querySelector(".iframe")
-        const select = document.querySelector("year")
-        const area = document.querySelector(".s")
-        document.addEventListener("change", (e) => {
-            console.log(e.target.value);
-            value = e.target.value
-            iframe.src = value
-            let num;
-            switch (value) {
-                case "https://ee-st091169.projects.earthengine.app/view/landscope":
-                    num = 12345678
-                    break;
-                case "https://ee-st091169.projects.earthengine.app/view/karta2010":
-                    num = 23456
-                    break;
-                case "https://ee-st091169.projects.earthengine.app/view/karta2000":
-                    num = 2345634543456
-                    break;
-            }
-
-            if (num) {
-                area.innerHTML = `Площадь ${num} км`
-            } else {
-                area.innerHTML = ""
-            }
-        })
-
-
-    </script>
 </body>
 
 </html>
