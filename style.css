@@ -352,8 +352,8 @@ p {
 .map {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  align-items: start;
+  width: auto;
 }
 
 .footer__desc {
@@ -363,8 +363,8 @@ p {
 .s {
   margin-top: 16px;
   margin-bottom: 32px;
-  font-size: 42px;
-  color: #192024;
+  font-size: 36px;
+  color: #676770;
 }
 
 .footer__desc h4 {
@@ -602,4 +602,20 @@ p {
 .main-container {
   display: flex;
   justify-content: center;
+}
+
+.map-container {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.year {
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+  height: 60px;
+  margin-bottom: 73vh;
+  color: #676770;
 }

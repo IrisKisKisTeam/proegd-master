@@ -40,6 +40,14 @@
             <iframe class="iframe" src="https://ee-st091169.projects.earthengine.app/view/landscope"></iframe>
             <p class="s">Площадь 21 000 км</p>
         </div>
+        <!-- ССЫЛКИ НА КАРТЫ ЗДЕСЬ -->
+        <select class="year">
+            <option value="https://ee-st091169.projects.earthengine.app/view/landscope">2024</option>
+            <option value="https://ee-st091169.projects.earthengine.app/view/landscope">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+        </select>
     </main>
 
     <footer id="footer" class="footer">
@@ -94,6 +102,17 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        const iframe = document.querySelector(".iframe")
+        const select = document.querySelector("year")
+        document.addEventListener("change", (e) => {
+            console.log(e.target.value);
+            value = e.target.value
+            iframe.src = value
+        })
+
+
+    </script>
 </body>
 
 </html>
