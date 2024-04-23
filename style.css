@@ -577,3 +577,29 @@ p {
     font-size: 24px;
   }
 }
+
+.article-p {
+  font-size: 22px;
+}
+
+.article-h {
+  font-size: 36px;
+  margin-top: 12px;
+}
+
+.article-image {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.article-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
