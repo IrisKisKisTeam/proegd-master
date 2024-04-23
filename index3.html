@@ -43,7 +43,7 @@
         <!-- ССЫЛКИ НА КАРТЫ ЗДЕСЬ -->
         <select class="year">
             <option value="https://ee-st091169.projects.earthengine.app/view/landscope">2024</option>
-            <option value="https://ee-st091169.projects.earthengine.app/view/landscope">2023</option>
+            <option value="https://ee-st091169.projects.earthengine.app/view/karta2023">2023</option>
             <option value="https://ee-st091169.projects.earthengine.app/view/karta2022">2022</option>
             <option value="https://ee-st091169.projects.earthengine.app/view/karta2021">2021</option>
             <option value="https://ee-st091169.projects.earthengine.app/view/karta2020">2020</option>
@@ -96,19 +96,19 @@
                     <ul>
                         <li>
                             <img src="img/icon-tw.svg" alt="twitter">
-                            <a target="_blank" href="https://www.youtube.com/watch?v=FAPwIEWzqJE">Twitter*</a>
+                            <a target="_blank" href="потом.html">Twitter*</a>
                         </li>
                         <li>
                             <img src="img/icon-pt.svg" alt="pinterest">
-                            <a target="_blank" href="https://www.youtube.com/watch?v=FAPwIEWzqJE">Pinterest</a>
+                            <a target="_blank" href="потом.html">Pinterest</a>
                         </li>
                         <li>
                             <img src="img/icon-google.svg" alt="google">
-                            <a target="_blank" href="https://www.youtube.com/watch?v=FAPwIEWzqJE">Google</a>
+                            <a target="_blank" href="потом.html">Google</a>
                         </li>
                         <li>
                             <img src="img/icon-wb.svg" alt="webflow">
-                            <a target="_blank" href="https://www.youtube.com/watch?v=FAPwIEWzqJE">Webflow</a>
+                            <a target="_blank" href="потом.html">Webflow</a>
                         </li>
                     </ul>
                 </div>
@@ -125,7 +125,7 @@
     <script src="script.js"></script>
     <script>
         const iframe = document.querySelector(".iframe")
-        const select = document.querySelector("year")
+        const select = document.querySelector(".year")
         const area = document.querySelector(".s")
         document.addEventListener("change", (e) => {
             console.log(e.target.value);
@@ -134,20 +134,22 @@
             let num;
             switch (value) {
                 case "https://ee-st091169.projects.earthengine.app/view/landscope":
-                    num = 12345678
+                    num = 21165931.285
                     break;
                 case "https://ee-st091169.projects.earthengine.app/view/karta2010":
-                    num = 23456
+                    num = 66471271.043
                     break;
                 case "https://ee-st091169.projects.earthengine.app/view/karta2000":
-                    num = 2345634543456
+                    num = 21165931.285
                     break;
             }
 
             if (num) {
-                area.innerHTML = `Площадь ${num} км`
+                area.innerHTML = `Площадь ${num} м²`
+                area.classList.remove("area-color")
             } else {
-                area.innerHTML = ""
+                area.innerHTML = "Площадь не найдена"
+                area.classList.add("area-color")
             }
         })
 
